@@ -46,7 +46,7 @@
 		List<Product> networkMarketFeaturedProducts = ProductFactory.getNetworkMarketOwnFeaturedProducts(conn, networkMarket.NetworkMarketID);
 
 %>
-<%@ include file="MasterTop_d.jsp" %>
+<%@ include file="MasterTop.jsp" %>
 
 <P class="bigestFont">&nbsp;&nbsp;Searched for "<%= StringEscapeUtils.escapeHtml( Utils.getSafeString( request.getParameter("search" ))) %>"</p>
 

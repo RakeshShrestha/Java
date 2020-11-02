@@ -82,7 +82,7 @@
     	} %>
 </table>
 <% } %>
-<%@ include file="MasterBottom_d.jsp" %>
+<%@ include file="MasterBottom.jsp" %>
 <%
 	} finally {
 		conn.close();

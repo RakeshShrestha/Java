@@ -362,12 +362,12 @@ public class URLProcessor extends HttpServlet {
 				}
 
 				/*response.setContentType("text/html");
-	    PrintWriter out = response.getWriter();
+				PrintWriter out = response.getWriter();
 
-	    out.println( "sp: " + request.getServletPath() + "<bR>" );
-	    out.println( "mid: " + marketID + "<bR>" );
-	    out.println( "cc: " + companyCode + "<bR>" );
-	    out.println( "jsp: " + servetURL + "<bR>" );*/
+				out.println( "sp: " + request.getServletPath() + "<bR>" );
+				out.println( "mid: " + marketID + "<bR>" );
+				out.println( "cc: " + companyCode + "<bR>" );
+				out.println( "jsp: " + servetURL + "<bR>" );*/
 
 				if((catgenPageContext.Template == null || catgenPageContext.Template.length() == 0) && catgenPageContext.Company != null)
 					catgenPageContext.Template = catgenPageContext.Company.Template;

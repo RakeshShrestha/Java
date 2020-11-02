@@ -21,7 +21,7 @@ public class DoLoad {
 	public static void main( String[] argv) {
 
 		MasterMarketLoader masterMarket = new MasterMarketLoader();
-		masterMarket.LoadData(null, "http://spreadsheets.google.com/feeds/cells/p2DIlEfXXvRGM1iKwllxSaw/od6/public/basic");
+		masterMarket.LoadData(null, "http://spreadsheets.google.com/feeds/cells/................./od6/public/basic");
 		
 		/*MembersLoader membersLoader = new MembersLoader();
 		membersLoader.ClearExtras();

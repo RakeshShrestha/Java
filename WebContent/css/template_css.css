@@ -1,0 +1,324 @@
+body{
+	margin:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #ffffe4;
+}
+.message{
+	font-weight:bold;
+}
+
+a:visited{
+	color:blue;
+}
+form{
+	margin-bottom:0px;
+}
+div.mod_docman_catdown ul{
+	list-style:none;
+	padding-left:0px;
+	margin-left:10px;
+}
+div.mod_docman_catdown li{
+	font-weight:bold;
+	margin-bottom:15px;
+}
+div.moduletablecenter table{
+	float:right;
+}
+div.moduletablecenter table tr{
+	text-align:center;
+}
+div.moduletablecenter a.mainlevelcenter{
+	padding-left:0px;
+}
+div.username{
+	width:100%;
+	text-align:center;
+	float:left;
+}
+div.moduletablesearch{
+	margin-top:10px;
+}
+div.blog_more strong{
+	color:#8A0004;
+}
+div.main{
+	float:left;
+}
+.feature{
+	margin: 7px;
+}
+.feature .news{
+	padding-right:10px;
+}
+.feature .news ul{
+	padding-left:15px;
+}
+.feature table td{
+	vertical-align:top;
+}
+.feature .moduletable{
+	line-height: 20px;
+}
+div.mainBody{
+	margin: 5px 15px 0px 7px;
+}
+.contentheading_gj_progress{
+	font-weight: bold;
+	font-size: 12px;
+	color:#8A0004;
+	border-bottom: 1px dotted #8A0004;
+}
+.contentheading_gj_progress a, .contentheading_gj_progress a:visited {
+	text-decoration:none;
+	color:#8A0004;
+}
+.blog_gj_progress, .blog_latest{
+	width:100%;
+}
+.inset{
+	float:right;
+	margin-top:7px;
+}
+.moduletable_latest h3{
+	text-align:left;
+	font-size: 14px;
+	border:0px;
+	margin:0px;
+	width:100%;
+	border-bottom: 1px dotted #8A0004;
+}
+.inset .moduletable_latest{
+	width:150px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	margin-right:7px;
+	border:#cccccc 1px solid;
+}
+.moduletable_latest h3 a, .moduletable_latest h3 a:visited {
+	margin-left:3px;
+	color:#8A0004;
+}
+.moduletable_latest a, .moduletable_latest a:visited {
+	color:#000000;
+	text-decoration:none;
+}
+.moduletable_latest a:hover{
+	text-decoration:underline;
+}
+div.moduletable_latest ul{
+	margin-top:6px;
+	margin-left:0px;
+	margin-bottom:0px;
+	padding-left:14px;
+	line-height:14px;
+}
+.josquote{
+	color:#8A0004;
+	font-family: "Times New Roman",Times,serif;
+	font-size: 14px;
+	font-style:italic;
+	text-align:center;
+}
+div.mod_contentitem table.contentpaneopen{
+    font-size: 11px;
+    line-height: 18px;
+}
+div.mod_contentitem td.contentheading{
+    border-bottom: 1px dotted #8A0004;
+    font-size: 14px;
+}
+h1, h2{
+	color:#8A0004;
+}
+h3{
+	margin-top:0px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #8A0004;
+}
+h4{
+	color:#8A0004;
+	margin-right:7px;
+	font-size: 11px;
+}
+p{
+	margin-right:10px;
+}
+/* history of Fair Trade index */
+div.pagenavcounter{
+	display:none;
+	visibility:hidden;
+}
+table.contenttoc{
+	width:135px;
+	border-left:dashed 1px #5A5C5F;
+	color:#5A5C5F;
+	text-align:left;
+	margin-left:25px;
+	margin-bottom:10px;
+}
+table.contenttoc th{
+	font-size:14px;
+	color: #8A0004;
+	padding-left:5px;
+}
+a.toclink, div.pagenavbar a{
+	font-size:11px;
+	line-height:16px;
+	text-decoration:none;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color: #5A5C5F;
+	padding-top: 5px;
+	padding-left:5px;
+}
+a.toclink{
+	display:block;
+}
+/* End history of Fair Trade index */
+.disclaimer{
+	font-size:9px;
+}
+.inputbox{
+/* Inputfield in search module */
+	margin-right:5px;	/* Create space between inputfield and searchbutton */
+}
+.dm_mod_catdown{
+	line-height:35px;
+	margin-left:7px;
+}
+#dm_cats h3, .dm_files, #dm_header, #dm_title, #dm_docs h3, .dm_orderby, #dm_pathway, #dm_taskbar{
+/* Hide unnecessary pieces in docman. */
+	display:none;
+	visibility:hidden;
+}
+td.modifydate{
+	font-size: 10px;
+	color: #ABABAB;
+}
+.contentheading, .componentheading,.componentheading_gj_progress, .contentheading_latest{
+	font-weight: bold;
+	font-size: 14px;
+	color: #8A0004;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.contentpaneopen, .contentpaneopen_gj_progress, .contentpaneopen_latest, .welcome, .contentpane {
+	font-size: 11px;
+	text-align: left;
+	background: transparent;
+	line-height: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+/* Main Menu(s) */
+a.mainlevel{
+	font-size: 11px;
+	line-height: 30px;
+	text-decoration: none;
+	font-weight: normal;
+	voice-family:"\"}\"";
+	voice-family:inherit;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin: 0px;
+	display: block;
+	width: 140px;
+	text-align:left;
+	padding-left:7px;
+}
+a.mainlevelcenter {
+	font-size: 11px;
+	line-height: 30px;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+a.sublevel{
+	font-size: 11px;
+	line-height: 30px;
+	text-decoration: none;
+	font-weight: normal;
+	voice-family:"\"}\"";
+	voice-family:inherit;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin: 0px;
+	display: block;
+	padding-left:20px;
+	margin-left:-4px;
+	font-style:italic;
+	text-align:left;
+}
+.moduletablemo table div{
+	width: 146px;
+}
+html>body a.mainlevel, html>body a.mainlevelmo, html>body a.mainlevelcenter {
+	/* Opera5-Fix-fix ;-) */
+	width:140px;
+	line-height:30px;
+}
+a.mainlevel:hover, a.mainlevel#active_menu, a.mainlevelmo:hover, a.mainlevelmo#active_menu, a.sublevel:hover, a#active_menu {
+	background: #d56200;
+	text-decoration: none;
+}
+div.moduletable h3{
+	margin-right: 7px;
+	margin-left:7px;
+	border-bottom: dotted 1px #8A0004;
+	width:130px;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.menu div.moduletable{
+	margin-bottom:26px;
+}
+div.moduletable form{
+	margin-left:7px;
+}
+div.moduletablemo {
+	margin-bottom:10px;
+}
+div.moduletablemo h3{
+	margin-left:7px;
+	line-height:23px;
+	border-bottom: dotted 1px #8A0004;
+	width:130px;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+div.welcome h3{
+	text-align:left;
+	width:auto;
+	font-size: 14px;
+	border-bottom: 0px;
+}
+span.orgName{
+	height:14px;
+}
+.orgName span{
+	float:left;
+}
+.orgName a{
+	float:right;
+	margin-right:7px;
+}
+.pathway, .orgName, span.pathway a{
+	color: #000000;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: normal;
+}
+span.pathway, span.orgName{
+	padding:3px;
+	padding-left:5px;
+	display:block;
+	background-color:#F2F2C4;
+}
+div.syndicate div{
+	width:145px;
+	text-align: center;
+}
+div.search{
+	margin-top:10px;
+}

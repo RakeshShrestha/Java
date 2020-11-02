@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiResourceLocking="false" privileged="true" >
+	<Resource 
+	   name="jdbc/NetmarketDB"
+	   auth="Container"
+	   type="javax.sql.DataSource"
+	   removeAbandoned="true"
+	   removeAbandonedTimeout="30"
+	   maxActive="100"
+	   maxIdle="30"
+	   maxWait="10000"
+	   username=""
+	   password=""
+	   driverClassName="com.mysql.jdbc.Driver"
+	   url="jdbc:mysql://127.0.0.1:3306/mydb"/>
+</Context>

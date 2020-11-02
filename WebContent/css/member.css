@@ -1,0 +1,291 @@
+BODY {
+	FONT-SIZE: 11px; MARGIN: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #e4ffff
+}
+.message {
+	FONT-WEIGHT: bold
+}
+A:visited {
+	COLOR: blue
+}
+FORM {
+	MARGIN-BOTTOM: 0px
+}
+DIV.mod_docman_catdown UL {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 10px; LIST-STYLE-TYPE: none
+}
+DIV.mod_docman_catdown LI {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 15px
+}
+DIV.moduletablecenter TABLE {
+	FLOAT: right
+}
+DIV.moduletablecenter TABLE TR {
+	TEXT-ALIGN: center
+}
+DIV.moduletablecenter A.mainlevelcenter {
+	PADDING-LEFT: 0px
+}
+DIV.username {
+	FLOAT: left; WIDTH: 100%; TEXT-ALIGN: center
+}
+DIV.moduletablesearch {
+	MARGIN-TOP: 10px
+}
+DIV.blog_more STRONG {
+	COLOR: #8a0004
+}
+DIV.main {
+	FLOAT: left
+}
+.feature {
+	MARGIN: 7px
+}
+.feature .news {
+	PADDING-RIGHT: 10px
+}
+.feature .news UL {
+	PADDING-LEFT: 15px
+}
+.feature TABLE TD {
+	VERTICAL-ALIGN: top
+}
+.feature .moduletable {
+	LINE-HEIGHT: 20px
+}
+DIV.mainBody {
+	MARGIN: 5px 15px 0px 7px
+}
+.contentheading_gj_progress {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #8a0004; BORDER-BOTTOM: #8a0004 1px dotted
+}
+.contentheading_gj_progress A {
+	COLOR: #8a0004; TEXT-DECORATION: none
+}
+.contentheading_gj_progress A:visited {
+	COLOR: #8a0004; TEXT-DECORATION: none
+}
+.blog_gj_progress {
+	WIDTH: 100%
+}
+.blog_latest {
+	WIDTH: 100%
+}
+.inset {
+	MARGIN-TOP: 7px; FLOAT: right
+}
+.moduletable_latest H3 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; MARGIN: 0px; WIDTH: 100%; BORDER-BOTTOM: #8a0004 1px dotted; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.inset .moduletable_latest {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 20px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 150px; MARGIN-RIGHT: 7px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.moduletable_latest H3 A {
+	MARGIN-LEFT: 3px; COLOR: #8a0004
+}
+.moduletable_latest H3 A:visited {
+	MARGIN-LEFT: 3px; COLOR: #8a0004
+}
+.moduletable_latest A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.moduletable_latest A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.moduletable_latest A:hover {
+	TEXT-DECORATION: underline
+}
+DIV.moduletable_latest UL {
+	MARGIN-TOP: 6px; PADDING-LEFT: 14px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 0px; LINE-HEIGHT: 14px
+}
+.josquote {
+	FONT-SIZE: 14px; COLOR: #8a0004; FONT-STYLE: italic; FONT-FAMILY: "Times New Roman",Times,serif; TEXT-ALIGN: center
+}
+DIV.mod_contentitem TABLE.contentpaneopen {
+	FONT-SIZE: 11px; LINE-HEIGHT: 18px
+}
+DIV.mod_contentitem TD.contentheading {
+	FONT-SIZE: 14px; BORDER-BOTTOM: #8a0004 1px dotted
+}
+H1 {
+	COLOR: #8a0004
+}
+H2 {
+	COLOR: #8a0004
+}
+H3 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #8a0004
+}
+H4 {
+	FONT-SIZE: 11px; COLOR: #8a0004; MARGIN-RIGHT: 7px
+}
+P {
+	MARGIN-RIGHT: 10px
+}
+DIV.pagenavcounter {
+	DISPLAY: none; VISIBILITY: hidden
+}
+TABLE.contenttoc {
+	MARGIN-BOTTOM: 10px; MARGIN-LEFT: 25px; BORDER-LEFT: #5a5c5f 1px dashed; WIDTH: 135px; COLOR: #5f5c5a; TEXT-ALIGN: left
+}
+TABLE.contenttoc TH {
+	PADDING-LEFT: 5px; FONT-SIZE: 14px; COLOR: #8a0004
+}
+A.toclink {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; COLOR: #5a5c5f; LINE-HEIGHT: 16px; PADDING-TOP: 5px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+DIV.pagenavbar A {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; COLOR: #5a5c5f; LINE-HEIGHT: 16px; PADDING-TOP: 5px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.toclink {
+	DISPLAY: block
+}
+.disclaimer {
+	FONT-SIZE: 9px
+}
+.inputbox {
+	MARGIN-RIGHT: 5px
+}
+.dm_mod_catdown {
+	MARGIN-LEFT: 7px; LINE-HEIGHT: 35px
+}
+#dm_cats H3 {
+	DISPLAY: none; VISIBILITY: hidden
+}
+.dm_files {
+	DISPLAY: none; VISIBILITY: hidden
+}
+#dm_header {
+	DISPLAY: none; VISIBILITY: hidden
+}
+#dm_title {
+	DISPLAY: none; VISIBILITY: hidden
+}
+#dm_docs H3 {
+	DISPLAY: none; VISIBILITY: hidden
+}
+.dm_orderby {
+	DISPLAY: none; VISIBILITY: hidden
+}
+#dm_pathway {
+	DISPLAY: none; VISIBILITY: hidden
+}
+#dm_taskbar {
+	DISPLAY: none; VISIBILITY: hidden
+}
+TD.modifydate {
+	FONT-SIZE: 10px; COLOR: #ababab
+}
+.contentheading {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #8a0004; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.componentheading {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #8a0004; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.componentheading_gj_progress {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #8a0004; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.contentheading_latest {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #8a0004; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.contentpaneopen {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 20px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.contentpaneopen_gj_progress {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 20px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.contentpaneopen_latest {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 20px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.welcome {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 20px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.contentpane {
+	FONT-SIZE: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 20px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+A.mainlevel {
+	DISPLAY: block; PADDING-LEFT: 7px; FONT-WEIGHT: normal; FONT-SIZE: 11px; MARGIN: 0px; WIDTH: 140px; COLOR: #000000; LINE-HEIGHT: 30px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left; TEXT-DECORATION: none; voice-family: inherit
+}
+A.mainlevelcenter {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 30px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.sublevel {
+	DISPLAY: block; PADDING-LEFT: 20px; FONT-WEIGHT: normal; FONT-SIZE: 11px; MARGIN: 0px 0px 0px -4px; COLOR: #000000; LINE-HEIGHT: 30px; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left; TEXT-DECORATION: none; voice-family: inherit
+}
+.moduletablemo TABLE DIV {
+	WIDTH: 146px
+}
+HTML > BODY A.mainlevel {
+	WIDTH: 140px; LINE-HEIGHT: 30px
+}
+HTML > BODY A.mainlevelmo {
+	WIDTH: 140px; LINE-HEIGHT: 30px
+}
+HTML > BODY A.mainlevelcenter {
+	WIDTH: 140px; LINE-HEIGHT: 30px
+}
+A.mainlevel:hover {
+	BACKGROUND: #d56200; TEXT-DECORATION: none
+}
+A.mainlevel#active_menu {
+	BACKGROUND: #d56200; TEXT-DECORATION: none
+}
+A.mainlevelmo:hover {
+	BACKGROUND: #d56200; TEXT-DECORATION: none
+}
+A.mainlevelmo#active_menu {
+	BACKGROUND: #d56200; TEXT-DECORATION: none
+}
+A.sublevel:hover {
+	BACKGROUND: #d56200; TEXT-DECORATION: none
+}
+A#active_menu {
+	BACKGROUND: #d56200; TEXT-DECORATION: none
+}
+DIV.moduletable H3 {
+	FONT-SIZE: 14px; MARGIN-LEFT: 7px; WIDTH: 130px; MARGIN-RIGHT: 7px; BORDER-BOTTOM: #8a0004 1px dotted; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.menu DIV.moduletable {
+	MARGIN-BOTTOM: 26px
+}
+DIV.moduletable FORM {
+	MARGIN-LEFT: 7px
+}
+DIV.moduletablemo {
+	MARGIN-BOTTOM: 10px
+}
+DIV.moduletablemo H3 {
+	FONT-SIZE: 14px; MARGIN-LEFT: 7px; WIDTH: 130px; LINE-HEIGHT: 23px; BORDER-BOTTOM: #8a0004 1px dotted; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+DIV.welcome H3 {
+	FONT-SIZE: 14px; BORDER-BOTTOM-WIDTH: 0px; WIDTH: auto; TEXT-ALIGN: left
+}
+SPAN.orgName {
+	HEIGHT: 14px
+}
+.orgName SPAN {
+	FLOAT: left
+}
+.orgName A {
+	FLOAT: right; MARGIN-RIGHT: 7px
+}
+.pathway {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; TEXT-DECORATION: none
+}
+.orgName {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; TEXT-DECORATION: none
+}
+SPAN.pathway A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; TEXT-DECORATION: none
+}
+SPAN.pathway {
+	PADDING-RIGHT: 3px; DISPLAY: block; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-COLOR: #f2f2c4
+}
+SPAN.orgName {
+	PADDING-RIGHT: 3px; DISPLAY: block; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-COLOR: #f2f2c4
+}
+DIV.syndicate DIV {
+	WIDTH: 145px; TEXT-ALIGN: center
+}
+DIV.search {
+	MARGIN-TOP: 10px
+}

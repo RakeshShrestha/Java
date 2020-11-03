@@ -6,9 +6,7 @@ Javalin is a true microframework with only two dependencies: the embedded web-se
 
 Javalin has plugins for JSON mapping, template rendering, and OpenAPI (Swagger), but they’re optional dependencies that you have to add manually.
 
-You can exclude the Jetty dependency if you want to run Javalin on a different servlet container.
-
-Enter the javalintest
+### Enter the javalintest
 
 ### Build and Run Locally
 

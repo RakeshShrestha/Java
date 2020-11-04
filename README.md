@@ -1,6 +1,6 @@
 # Kotlin-Java
 
-server application
+http2 server application
 
 Javalin is a true microframework with only two dependencies: the embedded web-server (Jetty) and a logging facade (SLF4J).
 

@@ -15,10 +15,10 @@ mvn package
 java -jar target/javalintest-1.0-jar-with-dependencies.jar
 ```
 
-### The server is running at port 8080
+### The server is running
 
-http://localhost:8080/
+https://localhost/
 
-http://localhost:8080/static-files-test.html
+https://localhost/static-files-test.html
 
 

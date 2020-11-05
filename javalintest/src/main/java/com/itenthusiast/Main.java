@@ -32,22 +32,36 @@ public class Main {
     private static Server createHttp2Server() {
 		Server server = new Server();
 		
-		ServerConnector sslConnector = new ServerConnector(server, getSslContextFactory());
-		sslConnector.setPort(443);
-        server.addConnector(sslConnector);
-		
+		// HTTP 
 		ServerConnector connector = new ServerConnector(server);
 		connector.setPort(80);
         server.addConnector(connector);
+		
+        // SSL Context Factory for HTTPS and HTTP/2
+        SslContextFactory sslContextFactory = new SslContextFactory();
+        sslContextFactory.setKeyStorePath(Main.class.getResource("/keystore.jks").toExternalForm()); // replace with your real keystore
+        sslContextFactory.setKeyStorePassword("Happylion123"); // replace with your real password
+        sslContextFactory.setCipherComparator(HTTP2Cipher.COMPARATOR);
+        sslContextFactory.setProvider("Conscrypt");
+        
+		// HTTPS Configuration
+        HttpConfiguration httpConfig = new HttpConfiguration();
+        httpConfig.setSendServerVersion(false);
+        httpConfig.setSecureScheme("https");
+        httpConfig.setSecurePort(443);
+        
+        HttpConfiguration httpsConfig = new HttpConfiguration(httpConfig);
+        httpsConfig.addCustomizer(new SecureRequestCustomizer());
+        
+		// HTTP/2 Connection Factory
+        HTTP2ServerConnectionFactory h2 = new HTTP2ServerConnectionFactory(httpsConfig);
+		
+        // HTTP/2 Connector
+        ServerConnector http2Connector = new ServerConnector(server, sslContextFactory);
+        http2Connector.setPort(443);
+        server.addConnector(http2Connector);
 				
 		return server;
-    }
-	
-    private static SslContextFactory getSslContextFactory() {
-        SslContextFactory sslContextFactory = new SslContextFactory();
-        sslContextFactory.setKeyStorePath(Main.class.getResource("/keystore.jks").toExternalForm());
-        sslContextFactory.setKeyStorePassword("Happylion123");
-        return sslContextFactory;
     }
 	
 }

@@ -13,8 +13,13 @@ Javalin has plugins for JSON mapping, template rendering, and OpenAPI (Swagger),
 ### Build and Run Locally
 
 ```bash
-mvn package
-java -jar target/javalintest-1.0-jar-with-dependencies.jar  --add-to-start=ssl,conscrypt
+gradlew build
+java -jar build/libs/javalintest-1.0.jar  --add-to-start=ssl,conscrypt
+```
+### Clean compiled resources
+
+```bash
+gradlew clean
 ```
 
 ### The server is running

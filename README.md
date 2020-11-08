@@ -1,17 +1,15 @@
 
-http server application
+kotlinapp is a Javalin (MicroFramework Service Oriented Architecture) based http server application.
 
-Javalin is a true microframework with only two dependencies: the embedded web-server (Jetty) and a logging facade (SLF4J).
+Javalin has plugins for JSON mapping, template rendering, and OpenAPI (Swagger).
 
-Javalin has plugins for JSON mapping, template rendering, and OpenAPI (Swagger), but they’re optional dependencies that you have to add manually.
-
-### Enter the javalintest
+### Enter the kotlinapp
 
 ### Build and Run Locally
 
 ```bash
 gradlew build
-java -jar build/libs/javalintest-1.0.jar  --add-to-start=ssl,conscrypt
+java -jar build/libs/kotlinapp-1.0.jar
 ```
 ### Clean compiled resources
 
@@ -23,6 +21,6 @@ gradlew clean
 
 https://localhost/
 
-https://localhost/static-files-test.html
+https://localhost/static-files.html
 
 

@@ -31,7 +31,6 @@ dependencies {
     def slf4jVersion = '1.7.30'
 	def koin_version = '1.0.2'
 
-
     compile "org.eclipse.jetty.http2:http2-server:$jettyVersion"
     compile "org.eclipse.jetty:jetty-alpn-conscrypt-server:$jettyVersion"
     compile "org.eclipse.jetty.alpn:alpn-api:$alpnApiVersion"

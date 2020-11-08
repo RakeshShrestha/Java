@@ -4,18 +4,18 @@ import io.javalin.http.Context
 
 class UserController() {
     fun login(ctx: Context) {
-		ctx.result("users login")
+	ctx.result("users login")
     }
 
     fun register(ctx: Context) {
-		ctx.result("users register")
+	ctx.result("users register")
     }
 
     fun getCurrent(ctx: Context) {
-		ctx.result("users getcurrent")
+	ctx.result("users getcurrent")
     }
 
     fun update(ctx: Context) {
-		ctx.result("users update")
+	ctx.result("users update")
     }
 }

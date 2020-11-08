@@ -12,14 +12,13 @@ import org.koin.standalone.inject
 
 class Router() : KoinComponent {
 	val userController: UserController by inject()
-	
-    fun register(app: Javalin) {
-        app.get("users") { ctx ->
+
+	fun register(app: Javalin) {
+		app.get("users") { ctx ->
 			userController.register(ctx)
-        }
-        app.get("user") { ctx ->
+		}
+		app.get("user") { ctx ->
 			userController.login(ctx)
-        }
-		
-    }
+		}
+	}
 }

@@ -35,10 +35,10 @@ class AppConfig : KoinComponent {
                 StandAloneContext.stopKoin()
             }
         }.start()
-
-		app.get("/") { it.result("Hello from rakesh") }
-		
+	
 		router.register(app)
+		
+		app.get("/") { it.result("Hello from rakesh") }
 		
 		return app
     }

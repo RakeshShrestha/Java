@@ -2,33 +2,23 @@ package app.web
 
 import io.javalin.Javalin
 
-import io.javalin.apibuilder.ApiBuilder.delete
-import io.javalin.apibuilder.ApiBuilder.get
-import io.javalin.apibuilder.ApiBuilder.path
-import io.javalin.apibuilder.ApiBuilder.post
-import io.javalin.apibuilder.ApiBuilder.put
-
 import io.javalin.core.security.SecurityUtil.roles
 import app.config.Roles
 
 import app.web.controllers.UserController
 
 import org.koin.standalone.KoinComponent
+import org.koin.standalone.inject
 
-class Router(
-    private val userController: UserController
-) : KoinComponent {
-
+class Router() : KoinComponent {
+	val userController: UserController by inject()
+	
     fun register(app: Javalin) {
-        app.routes {
-            path("users") {
-                post(userController::register)
-                post("login", userController::login)
-            }
-            path("user") {
-                get(userController::getCurrent)
-                put(userController::update)
-            }
+        app.get("users") { ctx ->
+			userController.register(ctx)
+        }
+        app.get("user") { ctx ->
+			userController.login(ctx)
         }
 		
     }

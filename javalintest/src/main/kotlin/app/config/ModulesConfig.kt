@@ -9,7 +9,7 @@ import org.koin.dsl.module.module
 object ModulesConfig {
     private val configModule = module {
         single { AppConfig() }
-        single { Router( get() ) }
+        single { Router() }
     }
     private val userModule = module {
         single { UserController() }

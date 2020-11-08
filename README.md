@@ -1,4 +1,3 @@
-Java11 Version
 
 http server application
 

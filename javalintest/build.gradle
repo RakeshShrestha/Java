@@ -2,22 +2,24 @@ group 'io.javalin'
 version '1.0'
 
 buildscript {
-    ext.kotlin_version = '1.4.10'
+    ext.kotlin_version = "1.4.10"
+
     repositories {
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
-apply plugin: 'java'
 apply plugin: 'kotlin'
-
-sourceCompatibility = 1.8
+apply plugin: 'application'
+mainClassName = "app.MainKt"
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -25,13 +27,12 @@ dependencies {
     def alpnBootVersion = '8.1.13.v20181017'
     def alpnApiVersion = '1.1.3.v20160715'
     def javalinVersion = '3.11.2'
-    def slf4jVersion = '1.8.0-beta4'
+    def slf4jVersion = '1.7.30'
 
     compile "org.eclipse.jetty.http2:http2-server:$jettyVersion"
     compile "org.eclipse.jetty:jetty-alpn-conscrypt-server:$jettyVersion"
     compile "org.eclipse.jetty.alpn:alpn-api:$alpnApiVersion"
-    compile "org.mortbay.jetty.alpn:alpn-boot:$alpnBootVersion"	
-    compile "org.conscrypt:conscrypt-openjdk-uber:2.5.1"
+    runtime "org.mortbay.jetty.alpn:alpn-boot:$alpnBootVersion"	
 
     compile "io.javalin:javalin:$javalinVersion"
     compile "org.slf4j:slf4j-api:$slf4jVersion"
@@ -41,21 +42,15 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+    kotlinOptions.jvmTarget = "1.8"
 }
-
 compileTestKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+    kotlinOptions.jvmTarget = "1.8"
 }
-
 
 jar {
   manifest { 
-    attributes "Main-Class": "com.itenthusiast.Main"
+    attributes "Main-Class": mainClassName
   }
   from { (configurations.compile).collect { it.isDirectory() ? it : zipTree(it) } } {
 	exclude 'META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA'

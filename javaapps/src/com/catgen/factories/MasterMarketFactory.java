@@ -1,3 +1,12 @@
+# Copyright Rakesh Shrestha (rakesh.shrestha@gmail.com)
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#
+# Redistributions must retain the above copyright notice.
+
 package com.catgen.factories;
 
 import java.sql.Connection;
@@ -18,7 +27,7 @@ public class MasterMarketFactory
 		pstmt.executeUpdate();
 		
 		MasterMarketLoader masterMarketLoader = new MasterMarketLoader();
-		masterMarketLoader.LoadData(conn, "http://spreadsheets.google.com/feeds/cells/p2DIlEfXXvRGM1iKwllxSaw/od6/public/basic");
+		masterMarketLoader.LoadData(conn, "http://spreadsheets.google.com/feeds/cells/.............../od6/public/basic");
 	}
 	
 	private static void LoadMasterMarketFromResultSet(ResultSet rs, MasterMarket MasterMarket) throws SQLException

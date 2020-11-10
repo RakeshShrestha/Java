@@ -1,5 +1,5 @@
 
-kotlinapp is a Javalin (MicroFramework Service Oriented Architecture) based http server application.
+kotlinapp is a Javalin (MicroFramework Service Oriented Architecture) based rest api server application.
 
 Javalin has plugins for JSON mapping, template rendering, and OpenAPI (Swagger).
 

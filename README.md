@@ -32,6 +32,7 @@ https://localhost/static-files.html
 3. Java-jwt : A Java implementation of JSON Web Token (JWT) - RFC 7519.
 4. Exposed : An ORM framework for Kotlin.
 5. HikariCP : HikariCP is a "zero-overhead" lightweight JDBC connection pool.
+6. H2 Database Engine : Embedded in-memory database.
 
 ### Unit Testing
 1. Unirest-java : Simplified, lightweight HTTP client library.

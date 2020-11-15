@@ -3,6 +3,8 @@ kotlinapp is a Javalin (MicroFramework Service Oriented Architecture) based rest
 
 Javalin has plugins for JSON mapping, template rendering, and OpenAPI (Swagger).
 
+As to me it's better than spark framework.
+
 ### Enter the kotlinapp
 
 ### Build and Run Locally

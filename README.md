@@ -23,4 +23,16 @@ https://localhost/
 
 https://localhost/static-files.html
 
+### Dependent libraries
+
+1. KOIN : A pragmatic lightweight dependency injection framework for Kotlin developers
+2. Jackson : Jackson has been known as "the Java JSON library" or "the best JSON parser for Java".
+3. Java-jwt : A Java implementation of JSON Web Token (JWT) - RFC 7519.
+4. Exposed : An ORM framework for Kotlin.
+5. HikariCP : HikariCP is a "zero-overhead" lightweight JDBC connection pool.
+
+### Unit Testing
+1. Unirest-java : Simplified, lightweight HTTP client library.
+2. JUnit : Java Unit Test Framework
+
 

@@ -39,7 +39,6 @@ class AppConfig : KoinComponent {
         val app = Javalin.create { 
 			it.server { createHttpServer() }
 			it.enableCorsForAllOrigins()
-			it.dynamicGzip = true
 			/*it.enableDevLogging()*/
 			it.enableWebjars()  			
 			it.addStaticFiles("/public")		

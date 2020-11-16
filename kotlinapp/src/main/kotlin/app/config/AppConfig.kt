@@ -57,15 +57,18 @@ class AppConfig : KoinComponent {
 
     private fun createHttpServer(): Server {
 
-		ALPNServerConnectionFactory().apply {
+		val alpn = ALPNServerConnectionFactory().apply {
 			defaultProtocol = "h2"
 		}
 
 		val sslContextFactory = SslContextFactory().apply {
-			keyStorePath = this::class.java.getResource("/keystore.jks").toExternalForm()
+			keyStorePath = this::class.java.getResource("/keystore.jks").toExternalForm() // replace with your real keystore
 			setKeyStorePassword("password") // replace with your real password
-			cipherComparator = HTTP2Cipher.COMPARATOR
+			setIncludeProtocols("TLSv1.2");
+			setIncludeCipherSuites("TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256");
 		}
+
+		val ssl = SslConnectionFactory(sslContextFactory, alpn.protocol)
 
 		val httpsConfig = HttpConfiguration().apply {
 			sendServerVersion = false
@@ -74,7 +77,9 @@ class AppConfig : KoinComponent {
 			addCustomizer(SecureRequestCustomizer())
 		}
 
-		HTTP2ServerConnectionFactory(httpsConfig)
+		val http2 = HTTP2ServerConnectionFactory(httpsConfig)
+
+		val fallback = HttpConnectionFactory(httpsConfig)
 
 		return Server().apply {
 			addConnector(ServerConnector(server).apply {
@@ -84,6 +89,7 @@ class AppConfig : KoinComponent {
 				port = 443
 			})
 		}
+	
     }
 }
 

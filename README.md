@@ -11,7 +11,7 @@ As to me it's better than spark framework.
 
 ```bash
 gradlew build
-java -jar build/libs/kotlinapp-1.0.jar
+java -jar build/libs/kotlinapp-1.0.jar --add-to-start=conscrypt
 ```
 ### Clean compiled resources
 

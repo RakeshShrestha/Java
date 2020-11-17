@@ -28,12 +28,13 @@ dependencies {
 	def slf4jVersion = '1.7.30'
 	def koin_version = '2.1.6'
 	def jackson_version = "2.11.3"
-	def junit_version = "4.13.1"
-	def unirest_version = "1.4.9"
 	def jwt_version = "3.11.0"
 	def hikaricp_version = "3.4.5"
 	def h2_version = "1.4.200"
 	def exposed_version = "0.17.7"
+
+	def junit_version = "4.13.1"
+	def unirest_version = "1.4.9"
 
 	compile "org.eclipse.jetty.http2:http2-server:$jettyVersion"
 	compile "org.eclipse.jetty:jetty-alpn-conscrypt-server:$jettyVersion"
@@ -67,10 +68,10 @@ compileTestKotlin {
 }
 
 jar {
-  manifest { 
-    attributes "Main-Class": mainClassName
-  }
-  from { (configurations.compile).collect { it.isDirectory() ? it : zipTree(it) } } {
-	exclude 'META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA'
-  }
+	manifest { 
+		attributes "Main-Class": mainClassName
+	}
+	from { (configurations.compile).collect { it.isDirectory() ? it : zipTree(it) } } {
+		exclude 'META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA'
+	}
 } 

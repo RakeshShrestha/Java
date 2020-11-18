@@ -1,3 +1,4 @@
+Java >= 1.8.0_252
 
 kotlinapp is a Javalin (MicroFramework Service Oriented Architecture) based rest api server application.
 
@@ -24,6 +25,9 @@ gradlew clean
 https://localhost/
 
 https://localhost/static-files.html
+
+### HTTPS
+1. Conscrypt : A Java Security Provider
 
 ### Kotlinapp Extra Dependency
 

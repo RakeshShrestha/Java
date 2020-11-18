@@ -62,7 +62,7 @@ class AppConfig : KoinComponent {
 		}
 
 		val sslContextFactory = SslContextFactory().apply {
-			keyStorePath = this::class.java.getResource("/keystore.jks").toExternalForm()
+			keyStorePath = this::class.java.getResource("/mykeystore.jks").toExternalForm()
 			setKeyStorePassword("password")
 			cipherComparator = HTTP2Cipher.COMPARATOR
 			provider = "Conscrypt"

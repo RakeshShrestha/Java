@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.controllers.UserControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-11-19T08:23:23" hostname="RAKESHLAPTOP" time="1.763">
+  <properties/>
+  <testcase name="invalid get current user without token" classname="app.controllers.UserControllerTest" time="0.302"/>
+  <testcase name="update user data" classname="app.controllers.UserControllerTest" time="0.324"/>
+  <testcase name="invalid login without pass valid body" classname="app.controllers.UserControllerTest" time="0.275"/>
+  <testcase name="get current user by token" classname="app.controllers.UserControllerTest" time="0.294"/>
+  <testcase name="success login with email and password" classname="app.controllers.UserControllerTest" time="0.293"/>
+  <testcase name="success register user" classname="app.controllers.UserControllerTest" time="0.274"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for WebjarHandler@47c6d9e6{STARTING}
+[Test worker] INFO io.javalin.Javalin - Static file handler added:
+    {urlPathPrefix: "/", path: "/public", location: Location.CLASSPATH}
+    Resolved path: 'file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/public/'
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for PrefixableHandler@55ce339f{STARTING}
+[Test worker] INFO io.javalin.Javalin - 
+           __                      __ _
+          / /____ _ _   __ ____ _ / /(_)____
+     __  / // __ `/| | / // __ `// // // __ \
+    / /_/ // /_/ / | |/ // /_/ // // // / / /
+    \____/ \__,_/  |___/ \__,_//_//_//_/ /_/
+
+        https://javalin.io/documentation
+
+[Test worker] INFO io.javalin.Javalin - Starting Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_275-b01
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5a94eb6{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - x509=X509@2fcff296(localhost,h=[],w=[]) for SslContextFactory@e5f2385[provider=Conscrypt,keyStore=file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/mykeystore.jks,trustStore=null]
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@7f1db0f9{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @5890ms
+[Test worker] INFO io.javalin.Javalin - Listening on http://localhost:80/api
+[Test worker] INFO io.javalin.Javalin - Listening on https://localhost:443/api
+[Test worker] INFO io.javalin.Javalin - Javalin started in 256ms \o/
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+[qtp2114811831-73] WARN app.ext.ErrorException - ForbiddenResponse occurred for req -> http://localhost/api/user
+[Test worker] INFO io.javalin.Javalin - Stopping Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@5a94eb6{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@7f1db0f9{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO io.javalin.Javalin - Javalin has stopped
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for WebjarHandler@598706f0{STARTING}
+[Test worker] INFO io.javalin.Javalin - Static file handler added:
+    {urlPathPrefix: "/", path: "/public", location: Location.CLASSPATH}
+    Resolved path: 'file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/public/'
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for PrefixableHandler@37d8c1af{STARTING}
+[Test worker] INFO io.javalin.Javalin - 
+           __                      __ _
+          / /____ _ _   __ ____ _ / /(_)____
+     __  / // __ `/| | / // __ `// // // __ \
+    / /_/ // /_/ / | |/ // /_/ // // // / / /
+    \____/ \__,_/  |___/ \__,_//_//_//_/ /_/
+
+        https://javalin.io/documentation
+
+[Test worker] INFO io.javalin.Javalin - Starting Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_275-b01
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5c49eaa9{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - x509=X509@57b82ced(localhost,h=[],w=[]) for SslContextFactory@6aa3771d[provider=Conscrypt,keyStore=file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/mykeystore.jks,trustStore=null]
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@55d6d92{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @6185ms
+[Test worker] INFO io.javalin.Javalin - Listening on http://localhost:80/api
+[Test worker] INFO io.javalin.Javalin - Listening on https://localhost:443/api
+[Test worker] INFO io.javalin.Javalin - Javalin started in 247ms \o/
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+[Test worker] INFO io.javalin.Javalin - Stopping Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@5c49eaa9{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@55d6d92{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO io.javalin.Javalin - Javalin has stopped
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for WebjarHandler@6535a332{STARTING}
+[Test worker] INFO io.javalin.Javalin - Static file handler added:
+    {urlPathPrefix: "/", path: "/public", location: Location.CLASSPATH}
+    Resolved path: 'file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/public/'
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for PrefixableHandler@1b4537f0{STARTING}
+[Test worker] INFO io.javalin.Javalin - 
+           __                      __ _
+          / /____ _ _   __ ____ _ / /(_)____
+     __  / // __ `/| | / // __ `// // // __ \
+    / /_/ // /_/ / | |/ // /_/ // // // / / /
+    \____/ \__,_/  |___/ \__,_//_//_//_/ /_/
+
+        https://javalin.io/documentation
+
+[Test worker] INFO io.javalin.Javalin - Starting Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_275-b01
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@7ca5d401{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - x509=X509@2939a5e7(localhost,h=[],w=[]) for SslContextFactory@3816f8e4[provider=Conscrypt,keyStore=file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/mykeystore.jks,trustStore=null]
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@163d1662{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @6494ms
+[Test worker] INFO io.javalin.Javalin - Listening on http://localhost:80/api
+[Test worker] INFO io.javalin.Javalin - Listening on https://localhost:443/api
+[Test worker] INFO io.javalin.Javalin - Javalin started in 231ms \o/
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+[qtp1473029246-106] WARN app.ext.ErrorException - BadRequestResponse occurred for req -> http://localhost/api/users/login
+[Test worker] INFO io.javalin.Javalin - Stopping Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@7ca5d401{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@163d1662{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO io.javalin.Javalin - Javalin has stopped
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for WebjarHandler@3ddf4729{STARTING}
+[Test worker] INFO io.javalin.Javalin - Static file handler added:
+    {urlPathPrefix: "/", path: "/public", location: Location.CLASSPATH}
+    Resolved path: 'file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/public/'
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for PrefixableHandler@6f4b6ab2{STARTING}
+[Test worker] INFO io.javalin.Javalin - 
+           __                      __ _
+          / /____ _ _   __ ____ _ / /(_)____
+     __  / // __ `/| | / // __ `// // // __ \
+    / /_/ // /_/ / | |/ // /_/ // // // / / /
+    \____/ \__,_/  |___/ \__,_//_//_//_/ /_/
+
+        https://javalin.io/documentation
+
+[Test worker] INFO io.javalin.Javalin - Starting Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_275-b01
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@793c301e{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - x509=X509@1396394f(localhost,h=[],w=[]) for SslContextFactory@6c11dee8[provider=Conscrypt,keyStore=file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/mykeystore.jks,trustStore=null]
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@52201cdc{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @6768ms
+[Test worker] INFO io.javalin.Javalin - Listening on http://localhost:80/api
+[Test worker] INFO io.javalin.Javalin - Listening on https://localhost:443/api
+[Test worker] INFO io.javalin.Javalin - Javalin started in 232ms \o/
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+[Test worker] INFO io.javalin.Javalin - Stopping Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@793c301e{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@52201cdc{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO io.javalin.Javalin - Javalin has stopped
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for WebjarHandler@2c68d43f{STARTING}
+[Test worker] INFO io.javalin.Javalin - Static file handler added:
+    {urlPathPrefix: "/", path: "/public", location: Location.CLASSPATH}
+    Resolved path: 'file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/public/'
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for PrefixableHandler@1888dc4d{STARTING}
+[Test worker] INFO io.javalin.Javalin - 
+           __                      __ _
+          / /____ _ _   __ ____ _ / /(_)____
+     __  / // __ `/| | / // __ `// // // __ \
+    / /_/ // /_/ / | |/ // /_/ // // // / / /
+    \____/ \__,_/  |___/ \__,_//_//_//_/ /_/
+
+        https://javalin.io/documentation
+
+[Test worker] INFO io.javalin.Javalin - Starting Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_275-b01
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@23cc4a97{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - x509=X509@4540c372(localhost,h=[],w=[]) for SslContextFactory@39459929[provider=Conscrypt,keyStore=file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/mykeystore.jks,trustStore=null]
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5b9de926{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @7073ms
+[Test worker] INFO io.javalin.Javalin - Listening on http://localhost:80/api
+[Test worker] INFO io.javalin.Javalin - Listening on https://localhost:443/api
+[Test worker] INFO io.javalin.Javalin - Javalin started in 243ms \o/
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+[Test worker] INFO io.javalin.Javalin - Stopping Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@23cc4a97{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@5b9de926{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO io.javalin.Javalin - Javalin has stopped
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for WebjarHandler@ec72b65{STARTING}
+[Test worker] INFO io.javalin.Javalin - Static file handler added:
+    {urlPathPrefix: "/", path: "/public", location: Location.CLASSPATH}
+    Resolved path: 'file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/public/'
+[Test worker] WARN org.eclipse.jetty.server.handler.AbstractHandler - No Server set for PrefixableHandler@6002d826{STARTING}
+[Test worker] INFO io.javalin.Javalin - 
+           __                      __ _
+          / /____ _ _   __ ____ _ / /(_)____
+     __  / // __ `/| | / // __ `// // // __ \
+    / /_/ // /_/ / | |/ // /_/ // // // / / /
+    \____/ \__,_/  |___/ \__,_//_//_//_/ /_/
+
+        https://javalin.io/documentation
+
+[Test worker] INFO io.javalin.Javalin - Starting Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 1.8.0_275-b01
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@198910c0{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - x509=X509@7c227d54(localhost,h=[],w=[]) for SslContextFactory@518dd09f[provider=Conscrypt,keyStore=file:///D:/xampp/htdocs/Kotlin-Java/kotlinapp/build/resources/main/mykeystore.jks,trustStore=null]
+[Test worker] INFO org.eclipse.jetty.util.ssl.SslContextFactory - Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6061c942{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @7359ms
+[Test worker] INFO io.javalin.Javalin - Listening on http://localhost:80/api
+[Test worker] INFO io.javalin.Javalin - Listening on https://localhost:443/api
+[Test worker] INFO io.javalin.Javalin - Javalin started in 234ms \o/
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+[Test worker] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+[Test worker] INFO io.javalin.Javalin - Stopping Javalin ...
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@198910c0{HTTP/1.1, (http/1.1)}{0.0.0.0:80}
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@6061c942{SSL, (ssl, http/1.1)}{0.0.0.0:443}
+[Test worker] INFO io.javalin.Javalin - Javalin has stopped
+]]></system-err>
+</testsuite>

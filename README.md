@@ -24,8 +24,6 @@ gradlew clean
 
 https://localhost/
 
-https://localhost/static-files.html
-
 ### HTTPS
 1. Conscrypt : A Java Security Provider
 

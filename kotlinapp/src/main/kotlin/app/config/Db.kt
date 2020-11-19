@@ -20,8 +20,9 @@ class Db() {
 
 	init {
 		dataSource = HikariConfig().let { config ->
-			config.jdbcUrl = "jdbc:h2:mem:api"
-			config.username = "sa"
+			config.jdbcUrl = "jdbc:mysql://localhost:3306/mydb"
+			config.driverClassName = "org.mariadb.jdbc.Driver"
+			config.username = "root"
 			config.password = ""
 			HikariDataSource(config)
 		}

@@ -2,9 +2,13 @@ Java >= 1.8.0_252
 
 kotlinapp is a Javalin (MicroFramework Service Oriented Architecture) based rest api server application.
 
-Javalin has plugins for JSON mapping, template rendering, and OpenAPI (Swagger).
+Javalin has automated plugins for JSON mapping, Web Sockets, template rendering, and OpenAPI (Swagger).
 
 As to me it's better than spark framework.
+
+This codebase demonstrates implementation of crud operations, authentication, routing, pagination, unit test and openapi (partial).
+
+Full OpenApi or Swagger automated documentation of implemented api and parameters can be put adding some extra lines of code only. This we normally enable in demo app not operational app.
 
 ### Enter the kotlinapp
 
@@ -22,17 +26,18 @@ gradlew clean
 
 ### The server is running
 
-https://localhost/
+https://localhost/api
 
 ### HTTPS
 1. Conscrypt : A Java Security Provider
+2. Conscrypt-openjdk-uber : Library from Uber
 
 ### Kotlinapp Extra Dependency
 
 1. KOIN : A pragmatic lightweight dependency injection framework for Kotlin developers
 2. Jackson : Jackson has been known as "the Java JSON library" or "the best JSON parser for Java"
 3. Java-jwt : A Java implementation of JSON Web Token (JWT) - RFC 7519
-4. Exposed : An ORM framework for Kotlin
+4. Exposed : A lightweight ORM framework for Kotlin - H2, MySQL, MariaDB, Oracle, PostgreSQL, MSSQL, SQLite
 5. HikariCP : HikariCP is a "zero-overhead" lightweight JDBC connection pool
 6. MariaDB : MariaDB Database Engine
 

@@ -38,6 +38,9 @@ dependencies {
 
 	compile "org.eclipse.jetty.http2:http2-server:$jettyVersion"
 	compile "org.eclipse.jetty:jetty-alpn-conscrypt-server:$jettyVersion"
+	compile "org.conscrypt:conscrypt-openjdk-uber:2.5.1"
+	
+	compile group: 'org.conscrypt', name: 'conscrypt-openjdk-uber', version: '2.5.1'
 
 	compile "io.javalin:javalin:$javalinVersion"
 	compile "org.slf4j:slf4j-api:$slf4jVersion"
@@ -53,8 +56,6 @@ dependencies {
 	compile "com.h2database:h2:$h2_version"
 	compile "org.jetbrains.exposed:exposed:$exposed_version"
 	
-	api 'org.apache.commons:commons-math3:3.6.1'
-	implementation 'com.google.guava:guava:30.0-jre'
 	implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.0'
 
 	compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"

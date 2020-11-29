@@ -39,7 +39,7 @@ class HttpUtil() {
 	}
 
 	@JvmField
-	val origin: String = "http://localhost"
+	val origin: String = "http://localhost:8080"
 
 	inline fun <reified T> post(path: String) =
 			Unirest.post(origin + path).headers(headers).asObject(T::class.java)

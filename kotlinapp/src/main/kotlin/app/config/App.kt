@@ -85,7 +85,7 @@ class App : KoinComponent {
 		val httpsConfig = HttpConfiguration().apply {
 			sendServerVersion = false
 			secureScheme = "https"
-			securePort = 443
+			securePort = 8443
 			addCustomizer(SecureRequestCustomizer())
 		}
 
@@ -96,12 +96,12 @@ class App : KoinComponent {
 		return Server().apply {
 			addConnector(
 				ServerConnector(server).apply {
-					port = 80
+					port = 8080
 				}
 			)
 			addConnector(
 				ServerConnector(server, sslContextFactory).apply {
-					port = 443
+					port = 8443
 				}
 			)
 		}

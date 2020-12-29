@@ -2,7 +2,7 @@ group 'io.javalin'
 version '1.0'
 
 buildscript {
-    ext.kotlin_version = "1.4.20"
+    ext.kotlin_version = "1.4.21"
 
     repositories {
         mavenCentral()
@@ -57,7 +57,12 @@ dependencies {
 	compile "com.h2database:h2:$h2_version"
 	compile "org.jetbrains.exposed:exposed:$exposed_version"
 	
-	implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.0'
+    api 'org.apache.commons:commons-math3:3.6.1'
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:22.0'
+
+	compile 'org.mariadb.jdbc:mariadb-java-client:2.7.1'
 
 	compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 	compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"

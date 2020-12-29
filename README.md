@@ -26,7 +26,7 @@ gradlew clean
 
 ### The server is running
 
-https://localhost/api
+http://localhost:8080/api
 
 ### HTTPS
 1. Conscrypt : A Java Security Provider

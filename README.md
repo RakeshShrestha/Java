@@ -8,7 +8,9 @@ As to me it's better than spark framework.
 
 This codebase demonstrates implementation of crud operations, authentication, routing, pagination, unit test and openapi (partial).
 
-Full OpenApi or Swagger automated documentation of implemented api and parameters can be put adding some extra lines of code only. This we normally enable in demo app not operational app.
+Full OpenApi or Swagger automated documentation of implemented api and parameters can be put adding some extra lines of code only. 
+
+This we normally enable in demo app not operational app.
 
 ### Enter the kotlinapp
 

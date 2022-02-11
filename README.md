@@ -1,6 +1,6 @@
 Java >= 1.8.0_252
 
-kotlinapp is a Javalin (Service Oriented Architecture) based MicroFramework rest api server application.
+javawebservice is a Javalin (Service Oriented Architecture) based MicroFramework rest api server application.
 
 Javalin has automated plugins for JSON mapping, Web Sockets, template rendering, and OpenAPI (Swagger).
 
@@ -12,7 +12,7 @@ Full OpenApi or Swagger automated documentation of implemented api and parameter
 
 This we normally enable in demo app not operational app.
 
-### Enter the kotlinapp
+### Enter the javawebservice
 
 ### Build and Run Locally
 
